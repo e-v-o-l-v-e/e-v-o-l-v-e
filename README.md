@@ -1,16 +1,44 @@
-## Hi there 👋
+## Hi, I'm Ivanoe !
 
-<!--
-**e-v-o-l-v-e/e-v-o-l-v-e** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```nix
+{ lib, ... }: {
+    ivanoe = {
+        description = "Software Developper";
+        pronouns = [ "he" "him" ];
+        age = 22;
 
-Here are some ideas to get you started:
+        languages = with lib.languages; [
+            nix
+            java
+            C
+            CSharp
+            GDScript
+            php
+            MIPS32
+        ];
+        
+        tools = with lib.tools; [
+            docker
+        ];
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+        interests = [
+            "FOSS" "Linux" "Self-Hosting" "Tech" 
+            "Reading" "Cinema" "Rock Climbing"
+        ];
+
+        # other
+        projects.nixpkgs.maintainer = true;
+
+        lets-go-attitude.enable = true;
+
+        softwares = [
+            nvim
+            kitty
+            hyprland niri
+            nix
+        ];
+
+        quote = "I use nixos btw";
+    };
+}
+```
