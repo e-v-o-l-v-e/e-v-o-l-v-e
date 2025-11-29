@@ -4,41 +4,49 @@
 { lib, ... }: {
     ivanoe = {
         description = "Software Developper";
+        specialisation = "back-end";
         pronouns = [ "he" "him" ];
         age = 22;
 
         languages = with lib.languages; [
-            nix
             java
             C
+            php
             CSharp
             GDScript
-            php
             MIPS32
         ];
         
         tools = with lib.tools; [
+            git
             docker
+            nix(os)
+            java.swing
+            php.laravel
         ];
 
         interests = [
-            "FOSS" "Linux" "Self-Hosting" "Tech" 
-            "Reading" "Cinema" "Rock Climbing"
+            "Linux" "Self-Hosting" "Rock Climbing" 
+            "Reading" "Cinema" "Shows" "Hiking"
         ];
 
-        # other
-        projects.nixpkgs.maintainer = true;
+        projects = { 
+            nixpkgs.maintainer.enable = true;
+        };
 
         lets-go-attitude.enable = true;
 
         softwares = [
-            nvim
+            neovim
             kitty
-            hyprland niri
+            hyprland
             nix
-        ];
 
-        quote = "I use nixos btw";
+            # others code editor I know and use
+            intelliJ
+            vscode
+            visual-studio
+        ];
     };
 }
 ```
