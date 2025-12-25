@@ -6,7 +6,7 @@
         description = "Software Developper";
         specialisation = "back-end";
         pronouns = [ "he" "him" ];
-        age = 22;
+        age = 23;
 
         languages = with lib.languages; [
             java
