@@ -26,8 +26,8 @@
         ];
 
         interests = [
-            "Linux" "Self-Hosting" "Rock Climbing" 
-            "Reading" "Cinema" "Shows" "Hiking"
+            "Linux & FOSS" "Self-Hosting" "Reading"
+            "Rock Climbing" "Cinema" "Shows" "Hiking"
         ];
 
         projects = { 
@@ -39,10 +39,11 @@
         softwares = [
             neovim
             kitty
+            silverbullet
             hyprland
             nix
 
-            # others code editor I know and use
+            # others code editor I know and use (though I prefer neovim to all of them)
             intelliJ
             vscode
             visual-studio
