@@ -1,28 +1,36 @@
 ## Hi, I'm Ivanoe !
 
 ```nix
-{ lib, ... }: {
+{
     ivanoe = {
         description = "Software Developper";
-        specialisation = "back-end";
         pronouns = [ "he" "him" ];
-        age = 22;
+        age = 23;
 
-        languages = with lib.languages; [
+        languages = [
+            php
+            typescript
+            html-css-javascript
             java
             C
-            php
             CSharp
             GDScript
             MIPS32
+            WINDEV
         ];
-        
-        tools = with lib.tools; [
+
+        tools = [
             git
             docker
             nix(os)
-            java.swing
+            SQLite
+        ];
+
+        framework = [
             php.laravel
+            javascript.prisma
+            javascript.express
+            java.swing
         ];
 
         interests = [
@@ -36,16 +44,12 @@
 
         lets-go-attitude.enable = true;
 
-        softwares = [
+        editors = [
             neovim
-            kitty
-            hyprland
-            nix
-
-            # others code editor I know and use
-            intelliJ
-            vscode
             visual-studio
+            intelliJ
+            vs-codium
+            android-studio
         ];
     };
 }
